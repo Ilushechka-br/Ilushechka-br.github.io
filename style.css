@@ -1,22 +1,4 @@
-:root {
-  overflow: hidden; 
-  display: flex;
-  justify-content: center; 
-}
 
-.divu {
-  aspect-ratio: 1 / 1;
-  animation: 5s linear 0s infinite alternate divu_an;
-}
-
-@keyframes divu_an {
-  from {
-    transform: translateX(110vh);
-  }
-  to {
-    transform: translateX(-110vh);
-  }
-}
 p {
     font-size: 25px;
 }
