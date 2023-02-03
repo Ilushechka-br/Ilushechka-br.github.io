@@ -1,3 +1,21 @@
-title {
-    font-size: 25px;
+body{
+  background:#222;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+.divo {
+  background-color: #74992e;
+  height: 100px;
+  width: 100vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 6px double;
+  border-radius:10px;
+  box-shadow:20px 20px 110px #000;
 }
