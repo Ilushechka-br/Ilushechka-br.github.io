@@ -1,5 +1,7 @@
 body {
   background: #222;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   text-align: center;
@@ -8,14 +10,87 @@ h1 {
 .divo {
   background-color: #74992e;
   height: 100px;
-  width: 100vh;
+  width: 50%;
   padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  margin: auto;
   border: 6px double;
   border-radius: 10px;
   box-shadow: 20px 20px 110px #000;
+}
+
+.parent {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.card1 a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.card1 {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 75%;
+  height: 20vh;
+  background-image: url("images/mod.jpg");
+  background-size: 300px 225px;
+  padding: 16px;
+  text-align: center;
+  border: 5px double;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #000;
+}
+.card2 {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 75%;
+  height: 20vh;
+  background-image: linear-gradient(
+    140deg,
+    #fadddb 0%,
+    #fb79f4 50%,
+    #bdd841 90%
+  );
+  padding: 16px;
+  text-align: center;
+  border: 5px double;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #000;
+  transition: 3s;
+}
+.card2:hover {
+  filter: hue-rotate(90deg);
+}
+.card2 a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card3 {
+  grid-area: 1 / 3 / 2 / 4;
+  max-width: 200 px;
+  width: 75%;
+  height: 20vh;
+  background-image: url("images/ilu.jpg");
+  background-size: 300px 225px;
+  padding: 16px;
+  text-align: center;
+  transition: 3s;
+  border: 5px double;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #000;
+  color: rgba(0, 0, 0, 0);
+}
+.card3:hover {
+  filter: grayscale(100%);
+  color: rgba(0, 0, 0, 100%);
+}
+body {
+  font-family: "Arial";
 }
