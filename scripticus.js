@@ -1,3 +1,13 @@
+
+document.onpointermove = event => {
+  console.log("К");
+  var mfolower = document.getElementById("mfolowere")
+  const {clientX,clientY} = event;
+
+  mfolower.style.left = `${clientX}px`;
+  mfolower.style.top = `${clientY}px`;
+}
+
 window.onscroll = function() {
     var scro = document.getElementById("src");
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
